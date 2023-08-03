@@ -25,13 +25,43 @@ func todo(w http.ResponseWriter, r *http.Request) {
 		Title: "Todo List",
 		Todos: []Todo{
 			{
-				Item: "Read", Done: true,
+				Item: "Good Morning", Done: false,
 			},
 			{
-				Item: "Write", Done: false,
+				Item: "Brush", Done: false,
+			},
+			{
+				Item: "Bath", Done: false,
 			},
 			{
 				Item: "Breakfast", Done: false,
+			},
+			{
+				Item: "2 hour study(learn different technology) session", Done: false,
+			},
+			{
+				Item: "30 min break", Done: false,
+			},
+			{
+				Item: "1.5 hour coding session", Done: false,
+			},
+			{
+				Item: "1.5 hour Lunch Break and nap time", Done: false,
+			},
+			{
+				Item: "30 min reading and coffee time", Done: false,
+			},
+			{
+				Item: "2 hour blog case study and write some part of it and make git commits", Done: false,
+			},
+			{
+				Item: "2 hour dinner break and netflix", Done: false,
+			},
+			{
+				Item: "1.5 hour college assignments and code completion", Done: false,
+			},
+			{
+				Item: "Good Night", Done: false,
 			},
 		},
 	}
