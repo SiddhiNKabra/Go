@@ -8,22 +8,27 @@ type College struct {
 }
 
 type Student struct {
-	College // college struct embedded into student struct(composition)
+	College       // college struct embedded into student struct(composition)
 	StudentName   string
 	StudentYear   int
 	StudentRollno int
+}
+type Department struct {
+	Student
+	DepartmentName string
 }
 
 func main() {
 	fmt.Println("Struct")
 
-	s := Student{}
-	s.CollegeName = "Pune Institute of Computer Technology"
-	s.CollegeCity = "Pune"
-	s.StudentName = "Jane Doe"
-	s.StudentRollno = 21125
-	s.StudentYear = 2
+	d := Department{}
+	d.CollegeName = "Pune Institute of Computer Technology"
+	d.CollegeCity = "Pune"
+	d.StudentName = "Jane Doe"
+	d.StudentRollno = 21125
+	d.StudentYear = 2
+	d.DepartmentName = "Computer"
 
-	fmt.Println(s)
+	fmt.Println(d)
 
 }
